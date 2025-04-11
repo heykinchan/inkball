@@ -23,12 +23,6 @@ Direct coloured balls into matching holes using strategically drawn lines. Corre
 gradle run
 ```
 
-Manual compilation:
-```bash
-javac -cp path_to_processing_core.jar src/main/java/inkball/*.java
-java -cp .:path_to_processing_core.jar inkball.App
-```
-
 ---
 
 ## ⚙️ Game Configuration
