@@ -20,7 +20,7 @@ Direct coloured balls into matching holes using strategically drawn lines. Corre
 ### Running the Game
 
 ```bash
-./gradlew run
+gradle run
 ```
 
 Manual compilation:
