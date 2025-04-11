@@ -1,7 +1,7 @@
 
 # Ink Ball Game
 
-A Java-based arcade puzzle game developed using the **Processing** graphics library and managed by **Gradle**. This project was developed as part of the INFO1113 / COMP9003 assignment at the University of Sydney.
+From my uni class, a Java-based arcade puzzle game developed using the **Processing** graphics library and managed by **Gradle**. 
 
 ## 🎮 Game Objective
 
@@ -9,31 +9,7 @@ Direct coloured balls into matching holes using strategically drawn lines. Corre
 
 ---
 
-## 📁 Project Structure
-
-```
-Ink ball/
-├── build.gradle                          # Gradle build file
-├── config.json                           # Game configuration
-├── level1.txt, level2.txt, level3.txt    # Level layouts (18x18 grids)
-├── src/
-│   ├── main/
-│   │   ├── java/inkball/
-│   │   │   ├── App.java                # Game launcher and loop
-│   │   │   ├── Ball.java               # Ball entity
-│   │   │   ├── Hole.java               # Hole logic and attraction
-│   │   │   ├── Wall.java               # Static and colour-changing walls
-│   │   │   ├── GameObject.java         # Abstract parent class
-│   │   │   ├── Point.java              # Used for drawing hitboxes
-│   │   │   ├── Cell.java               # Grid layout cell handler
-│   │   │   └── Spawner.java            # Spawner locations
-│   │   └── resources/inkball/          # Sprites for walls, balls, holes
-│   └── test/java/inkball/SampleTest.java  # Sample unit test
-```
-
----
-
-## 🚀 Getting Started
+## 🚀 Set-up of the Program
 
 ### Prerequisites
 
@@ -44,13 +20,7 @@ Ink ball/
 ### Running the Game
 
 ```bash
-./gradlew run
-```
-
-Manual compilation:
-```bash
-javac -cp path_to_processing_core.jar src/main/java/inkball/*.java
-java -cp .:path_to_processing_core.jar inkball.App
+gradle run
 ```
 
 ---
@@ -99,66 +69,6 @@ Unit tests are in `src/test/`. Use JUnit and jacoco:
 ```bash
 ./gradlew test jacocoTestReport
 ```
-
-Target >90% test coverage.
-
----
-
-## 🧱 Extension Possibilities
-
-You can add:
-
-- Bricks that take 3 hits
-- One-way or coloured walls
-- Acceleration tiles
-- Key wall / hole toggles
-
-See assignment brief for full list of optional extensions (worth extra marks).
-
----
-
-## ✅ Features Checklist (from Assignment Brief)
-
-- [x] Ball & hole spawning
-- [x] Line drawing and reflection
-- [x] Score tracking
-- [x] Timer with loss condition
-- [x] Level transitions
-- [x] Physics-based ball movement and reflection
-- [x] Attraction into hole with size scaling
-- [x] Functional config parsing
-- [x] Pause & restart mechanics
-- [x] Unit test coverage
-
----
-
-## 📐 Design Overview
-
-Object-oriented design with modular classes for each major game entity (Ball, Wall, Hole, etc.). The `App` class handles rendering, input, and game state control.
-
----
-
-## 📸 Assets
-
-Sprites are in `src/main/resources/inkball/` and mapped using filenames like:
-
-- `ball0.png` to `ball4.png`
-- `hole0.png` to `hole4.png`
-- `wall0.png` to `wall4.png`
-- `inkball_spritesheet.png`
-
-Use `PApplet.loadImage` for rendering.
-
----
-
-## 👨‍🏫 For Markers and Tutors
-
-This project was implemented following the INFO1113 / COMP9003 Assignment Specifications. Please refer to:
-
-- `config.json` and level files in root
-- `src/` for game logic
-- `build.gradle` for dependencies
-- `SampleTest.java` for test setup
 
 ---
 
