@@ -1,7 +1,7 @@
 
 # Ink Ball Game
 
-From my uni class, a Java-based arcade puzzle game developed using the **Processing** graphics library and managed by **Gradle**. 
+A Java-based arcade puzzle game developed using the **Processing** graphics library and managed by **Gradle**. 
 
 ## 🎮 Game Objective
 
