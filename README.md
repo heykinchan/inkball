@@ -3,6 +3,16 @@
 
 A Java-based arcade puzzle game developed using the **Processing** graphics library and managed by **Gradle**. 
 
+---
+### Screencap of the Game
+![screencap](images/inkball-1.png)
+
+--- 
+### Illustration of the Movements
+![illustration](images/inkball-2.png)
+
+---
+
 ## 🎮 Game Objective
 
 Direct coloured balls into matching holes using strategically drawn lines. Correct matches increase the score, while mismatches result in penalties. Win the game by successfully capturing all balls before time runs out.
